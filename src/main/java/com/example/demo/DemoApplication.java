@@ -38,6 +38,7 @@ public class DemoApplication {
             String pathFile4 = "src/bac-2021_ae-segou.csv";
             String pathFile5 = "src/bac-2022_ae-segou.csv";
             String line = "";
+            String line0 = "";
             String line1 = "";
             String line2 = "";
             String line3 = "";
@@ -52,8 +53,8 @@ public class DemoApplication {
                 BufferedReader fileTal = new BufferedReader(new FileReader(pathFileTal));
                 BufferedReader br2 = new BufferedReader(new FileReader(pathFile4));
                 BufferedReader br3 = new BufferedReader(new FileReader(pathFile3));
-                while ((line = fileTse.readLine()) != null) {
-                    String[] strings = line.split(",");
+                while ((line0 = fileTse.readLine()) != null) {
+                    String[] strings = line0.split(",");
                     Etudiant etudiant = new Etudiant();
                     etudiant.setNumPlace(Long.valueOf(strings[0]));
                     etudiant.setLastName(strings[1]);
