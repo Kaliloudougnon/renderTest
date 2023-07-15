@@ -22,11 +22,13 @@ public class EtudiantController {
     private EtudiantRepository etudiantRepository;
 
     @GetMapping("etudiant/{numPlace}/{session}")
-    public Etudiant getEtudiantByNumPlace(@PathVariable long numPlace, @PathVariable long session){
+    public Etudiant getEtudiantByNumPlace(@PathVariable long numPlace, @PathVariable long session) {
 
-        return etudiantRepository.findEtudiantByNumPlaceAndSession(numPlace,session);
-    }@GetMapping("allEtudiant/{academie}/{session}")
-    public List<Etudiant> getAllEtudiant(@PathVariable String academie,@PathVariable long session){
-      return etudiantRepository.findAllByAcademieAndSession(academie,session);
+        return etudiantRepository.findEtudiantByNumPlaceAndSession(numPlace, session);
+    }
+
+    @GetMapping("allEtudiant/{academie}/{session}")
+    public List<Etudiant> getAllEtudiant(@PathVariable String academie, @PathVariable long session) {
+        return etudiantRepository.findAllByAcademieAndSession(academie, session);
     }
 }
