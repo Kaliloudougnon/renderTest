@@ -44,7 +44,7 @@ public class DemoApplication {
             String line3 = "";
             String line4;
             String line5 = "";
-          /*  try {
+            try {
                 BufferedReader fileTse = new BufferedReader(new FileReader(pathFileTse));
                 BufferedReader fileTsexp = new BufferedReader(new FileReader(pathFileTsexp));
                 BufferedReader fileTseco = new BufferedReader(new FileReader(pathFileTseco));
@@ -182,7 +182,7 @@ public class DemoApplication {
 
             } catch (Exception e) {
                 System.out.println(line.toString());
-            }*/
+            }
 
         };
     }
